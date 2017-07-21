@@ -1,3 +1,2 @@
 #!/bin/bash
 echo 'Hello PostCompile!'
-export BUILDPACK_RUN=prepare.sh
