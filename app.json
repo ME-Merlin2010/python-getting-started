@@ -2,7 +2,7 @@
   "name": "Start on Heroku: Python",
   "description": "A barebones Python app, which can easily be deployed to Heroku.",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
+  "repository": "https://github.com/ME-Merlin2010/python-getting-started",
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql", "papertrail" ], 
   "buildpacks": [
@@ -12,6 +12,21 @@
     {
       "url": "heroku/python"
     }
-  ]
+  ], 
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "BUILDPACK_RUN": {
+      "description": "The number of processes to run.",
+      "value": "prepare.sh"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'Hello Postdeploy'"
+  }  
 
 }
+
+
