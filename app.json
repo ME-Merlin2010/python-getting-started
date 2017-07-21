@@ -21,10 +21,6 @@
     "COMMENT": {
       "description": "A key for comments.",
       "generator": "scripts-postdeploy run only once after installation of the app"
-    },
-    "BUILDPACK_RUN": {
-      "description": "The script to run after compile.",
-      "value": "prepare.sh"
     }
   },
   "scripts": {
