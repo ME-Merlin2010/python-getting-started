@@ -26,7 +26,6 @@
   "scripts": {
     "postdeploy": "~/postDeploy.sh"
   }  
-
 }
 
 
