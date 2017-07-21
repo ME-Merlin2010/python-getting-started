@@ -1,4 +1,3 @@
 #!/bin/bash
-echo 'Hello World!'
-alias ll='ls -la'
+echo 'Hello Prepare!'
 
