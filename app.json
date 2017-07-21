@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "postdeploy": "exec ~/postDeploy.sh"
+    "postdeploy": "~/postDeploy.sh"
   }  
 
 }
