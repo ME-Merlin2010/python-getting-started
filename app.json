@@ -18,8 +18,12 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
+    "COMMENT": {
+      "description": "A key for comments.",
+      "generator": "scripts-postdeploy run only once after installation of the app"
+    },
     "BUILDPACK_RUN": {
-      "description": "The number of processes to run.",
+      "description": "The script to run after compile.",
       "value": "prepare.sh"
     }
   },
